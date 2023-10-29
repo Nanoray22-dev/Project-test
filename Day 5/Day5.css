@@ -1,0 +1,21 @@
+header{
+    height: 80px;
+    width: 100%;
+    background:blanchedalmond;
+}
+ul
+{
+    list-style: none;
+}
+nav
+{
+    padding-top: 20px;
+    margin:50px;
+}
+li
+{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}

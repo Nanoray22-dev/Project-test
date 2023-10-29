@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <title>Calcular Area</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="Day8.css" />
+    <script src="Day8.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="mainHeader">
+        <!-- Area de seleccionar de calculo -->
+        <nav class="mainNav">
+          <ul class="">
+            <li onclick="showArea('Cuadrado')">Area de un Cuadrado</li>
+            <li onclick="showArea('Triangulo')">Area de un Triangulo</li>
+            <li onclick="showArea('Rectangulo')">Area de un Rectangulo</li>
+          </ul>
+        </nav>
+      </header>
+      <div class="Form">
+        <!-- Area de Triangulo -->
+        <div id="Triangulo" class="Formcaja">
+          <form>
+            <h2>Area de un Triangulo</h2>
+            <div>
+              <label for="">Insertar un numero:</label>
+              <input type="text" id="baseTriangulo" placeholder="Base" required/>
+            </div>
+            <div>
+              <label for="">Insertar un numero:</label>
+              <input class="alert"  type="text" id="alturaTriangulo" placeholder="Altura" required />
+            </div>
+            <div class="resultado" id=" resultadoTriangulo">
+              <h3>Resultado: </h3>
+              <p id="resTriangulo"></p>
+          </div>
+            <button type="button" onclick="calcularArea('Triangulo')">
+              Calcular
+            </button>
+          </form>
+        </div>
+        <!-- Area de Rectangulo -->
+        <div id="Rectangulo" class="Formcaja">
+          <form>
+            <h2>Area de un Rectangulo</h2>
+            <div>
+              <label for="">Insertar un numero:</label>
+              <input type="text" id="baseRectangulo" placeholder="Base" />
+            </div>
+            <div>
+              <label for="">Insertar un numero:</label>
+              <input type="text" id="alturaRectangulo" placeholder="Altura"/>
+            </div>
+            <div class="resultado" id=" resultadoRectangulo">
+              <h3>Resultado: </h3>
+              <p id="resRectangulo"></p>
+          </div>
+            <button type="button" onclick="calcularArea('Rectangulo')">
+              Calcular
+            </button>
+          </form>
+        </div>
+        <!-- Area de Cuadrado -->
+        <div id="Cuadrado" class="Formcaja">
+          <form>
+            <h2>Area de un Cuadrado</h2>
+            <div>
+              <label for="">Insertar un numero:</label>
+              <input type="text" id="ladoCuadrado" placeholder="Lado"/>
+            </div>
+            <!-- <div>
+              <label for="">Insertar un numero:</label>
+              <input type="text" id="ladoCuadrado"  placeholder="Lado"/>
+            </div> -->
+            <div class="resultado" id=" resultadoCuadrado">
+                <h3>Resultado: </h3>
+                <p id="resCuadrado"></p>
+            </div>
+            <button type="button" onclick="calcularArea('Cuadrado')">
+              Calcular
+            </button>
+          </form>
+        </div>
+        <!-- Final de la caja -->
+      </div>
+    </div>
+  </body>
+</html>

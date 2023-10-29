@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .chat-container {
+    display: flex;
+    height: 70vh; /* Ajusta la altura total del contenedor */
+  }
+  
+  .user-list {
+    width: 200px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    overflow-y: auto; /* Hacer que la barra de usuarios tenga scroll si es necesario */
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .user-list h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .user-item {
+    list-style: none;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .user-item:hover {
+    background-color: #ddd;
+  }
+  
+  .chat-window {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #selected-user {
+    margin: 0;
+  }
+  #selected-user svg {
+    width: 1em; 
+    height: 1em;
+    margin-right: 8px; 
+  }
+
+  .chat-area {
+    flex-grow: 1;
+    overflow-y: auto; /* Hacer que el área de chat tenga scroll si es necesario */
+    padding: 20px;
+  }
+  
+  .chat-messages {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .user-input {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  #message-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #send-button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #send-button:hover {
+    background-color: #0056b3;
+  }
+  
