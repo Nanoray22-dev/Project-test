@@ -30,13 +30,20 @@ body {
     overflow-y: auto; /* Hacer que la barra de usuarios tenga scroll si es necesario */
     border: none;
     border-radius: 5px;
+    align-items: end;
+    justify-content: center;
   }
   
   .user-list h2 {
     font-size: 18px;
     margin-bottom: 10px;
   }
-  
+  .user-list img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right:10px ;
+  }
   .user-item {
     list-style: none;
     padding: 8px;

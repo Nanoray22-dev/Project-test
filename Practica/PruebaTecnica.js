@@ -85,7 +85,7 @@ imprime "FizzBuzz".
 // }
 // FizzBuzz()
 
-// // la Funcion con un operador ternario
+// la Funcion con un operador ternario
 // function FizzBuzz(){
 //     for(let i = 1; i <= 100; i++){
 //         const output = (i % 3 === 0 && i % 2 === 0) ? 'FizzBuzz' : 
@@ -97,37 +97,37 @@ imprime "FizzBuzz".
 // FizzBuzz();
 
 
-// const FizzBuzz = () =>{
-//     for (let i = 1; i <= 10; i++){
-//         if(i %3  === 0 && i % 2  === 0){
-//             console.log('FizzBuzz', i)
-//         }else if(i % 3 === 0){
-//             console.log('Fizz', i)
-//         }else if (i % 2 === 0){
-//             console.log('Buzz', i)
-//         }else{
-//             console.log(i)
-//         }
-//     }
-// }
+const FizzBuzz = () =>{
+    for (let i = 1; i <= 10; i++){
+        if(i %3  === 0 && i % 2  === 0){
+            console.log('FizzBuzz', i)
+        }else if(i % 3 === 0){
+            console.log('Fizz', i)
+        }else if (i % 2 === 0){
+            console.log('Buzz', i)
+        }else{
+            console.log(i)
+        }
+    }
+}
 
-// FizzBuzz();
+FizzBuzz();
 
-// const numObj = (s) => {
-//     const resultArray = [];
-//     for(let i = 0; i < s.length; i++){
-//         const charCode = String.fromCharCode(s[i]);
-//         const obj = {
-//             [String(s[i])] : charCode
-//         };
-//         resultArray.push(obj);
-//     }
-//     return resultArray;
-// }
+const numObj = (s) => {
+    const resultArray = [];
+    for(let i = 0; i < s.length; i++){
+        const charCode = String.fromCharCode(s[i]);
+        const obj = {
+            [String(s[i])] : charCode
+        };
+        resultArray.push(obj);
+    }
+    return resultArray;
+}
 
-// const numbersArray = [97,98,99,100,101,102,103,104,105,106,107];
-// const result = numObj(numbersArray)
-// console.log(result);
+const numbersArray = [97,98,99,100,101];
+const result = numObj(numbersArray)
+console.log(result);
 
 // como saber si una palabra es un palidromo o no
 // const palidromo = (palabra) => {
