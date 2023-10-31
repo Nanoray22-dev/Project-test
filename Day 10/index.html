@@ -27,8 +27,8 @@
   <!-- Reto 1 -->
   <h2>Task 1</h2>
 
-  <p>Cambia el texto del siguiente elemento con id "cambiar" para que ahora diga: Programacion FullStack.</p>
-  <p id="cambiar">Que aprenderé en estos 5 meses?</p>
+  <p>Que aprenderé en estos 5 meses?</p>
+  <p id="cambiar"></p>
 
   <!-- Reto 2 -->
   <h2>Task 2</h2>
@@ -53,29 +53,7 @@
 
   <ul id="lista"></ul>
 
-  <script>
-    // Reto 1
-    document.getElementById('cambiar').innerText = 'Programacion FullStack';
-
-    // Reto 2
-    var operador1Value = parseInt(document.getElementById('operador1').innerText);
-    var operador2Value = parseInt(document.getElementById('operador2').innerText);
-    var suma = operador1Value + operador2Value;
-    document.getElementById('suma').innerText = suma;
-
-    // Reto 3
-    document.getElementById('estilos').classList.add('button');
-
-    // Reto 4
-    var frutas = ["manzana", "mandarina", "pera"];
-    var lista = document.getElementById('lista');
-
-    frutas.forEach(function(fruta) {
-      var li = document.createElement('li');
-      li.innerText = fruta;
-      lista.appendChild(li);
-    });
-  </script>
+  <script src="./index.js"></script>
 
 </body>
 </html>

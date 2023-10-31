@@ -1,56 +1,22 @@
-const userList = document.querySelector('#userList');
-function listar(userName, userId){
-    const li = document.createElement('li');
-    li.classList.add('userListItem')
+ // Reto 1
 
-    const span = document.createElement('span');
-    li.classList.add('imgContainer')
+ document.getElementById('cambiar').textContent = 'Porgramacion fullstack';
 
-    const img = document.createElement('img');
-    img.src = `https://robohash.org/138.36.78.${userId}.png`;
-    img.alt = 'user avatar'
+ // Reto 2
+ const operador1Value = parseInt(document.getElementById('operador1').innerText);
+ const operador2Value = parseInt(document.getElementById('operador2').innerText);
+ const suma = operador1Value + operador2Value;
+ document.getElementById('suma').innerText = suma;
 
-    const h3 = document.createElement('h3');
-    h3.classList.add('userName'); 
-    h3.textContent = userName;
+ // Reto 3
+ document.getElementById('estilos').classList.add('button');
 
-    span.appendChild(img);
-    li.appendChild(span); 
-    li.appendChild(h3);   
-    userList.appendChild(li);
-}
+ // Reto 4
+ const frutas = ["manzana", "mandarina", "pera"];
+ const lista = document.getElementById('lista');
 
-const users = 
-[
-    {
-        userId: 1,
-        name: 'Miguel Rolando', 
-    },
-    {
-        userId: 2,
-        name: 'Samel Lechuga', 
-    },
-    {
-        userId: 3,
-        name: 'Javier Ohara', 
-    },
-    {
-        userId: 4,
-        name: 'Saul Perdomo', 
-    },
-    {
-        userId: 5,
-        name: 'Daniel Rodriguez', 
-    },
-    {
-        userId: 6,
-        name: 'Armando Ollas', 
-    },
-    {
-        userId: 7,
-        name: 'Juan Jose', 
-    },
-];
-users.forEach(users => {
-    listar(users.name, users.userId )
-});
+ frutas.forEach(function(fruta) {
+   const li = document.createElement('li');
+   li.innerText = fruta;
+   lista.appendChild(li);
+ });
