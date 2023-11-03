@@ -1,42 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href='./index.css'/>
     <script src="./Day10.js" defer type="module"></script>
     <title>Chat App</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-    <div class="sideBarContainer">
+      <div class="sideBarContainer">
+        <h2>Lista de Usuarios</h2>
+        <ul id="userList"></ul>
+      </div>
 
-        <ul id="userList">
-             <h2>Lista de Usuarios</h2>
-            <li class="userListItem">
-                <span class="imgConatiner">
-                    <img src="https://robohash.org/138.36.78.25.png" alt="user avatar">
-                </span>
-                <h3 class="userName">
-                    Raysell Concepcion
-                </h3>
-            </li>
-        </ul>
-    </div>
+      <style>
+        form {
+          padding: 14px;
+        }
+        input {
+          height: 32px;
+        }
+        form div {
+          display: flex;
+          flex-direction: column;
+          width: 400px;
+          padding: 12px;
+        }
+        .buttons {
+          flex-direction: row;
+          gap: 10px;
+        }
+      </style>
 
-    <div class="ChatContainer" id="container">
-        <ul id="messageContainer" >
-            <li>
-                <div>
-                    <h3>Nombre usuario</h3>
-                    <h4>Fecha</h4>
-                    <div>
-                        <p>soy yo raysell, bueno que soy</p>
-                    </div>
-                </div>
-            </li>
+      <div class="ChatContainer" id="container">
+        <ul id="messsagesContainer">
+         
         </ul>
+        <!-- <ol id="listaDeCompras" style="padding: 40px">
+         
+        </ol>
+        <form
+          style="width: 300px; border: solid black 1px; background: #ffa3a3"
+          id="crearAticulo"
+        >
+          <input
+            style="height: 30px; border-radius: 10px; font-weight: 600"
+            type="text"
+            name="articulo"
+            placeholder="Ingresa el nuevo articulo"
+          />
+          <button
+            style="
+              width: 30px;
+              height: 30px;
+              font-weight: bold;
+              background: aqua;
+              border-radius: 12px;
+              cursor: pointer;
+            "
+          >
+            +
+          </button>
+        </form> -->
+      </div>
     </div>
-    </div>
-</body>
+  </body>
 </html>

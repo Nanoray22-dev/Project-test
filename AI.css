@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* #login-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto; 
+    margin-top: 20vh; 
+    padding: 20px;
+    width: 300px;
+} */
+
+#chat-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+#user-list {
+    background-color: #4CAF;
+    color: white;
+    text-align: center;
+    width: 100px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 20px;
+}
+
+#chat-content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
+}
+
+#message-list {
+    flex: 1;
+    overflow-y: auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#message-input,
+#send,
+#username,
+#password,
+#login,
+#register {
+    margin-top: 10px;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: calc(100% - 28px);
+    box-sizing: border-box;
+    font-size: 18px;
+    border: none;
+}
+
+#send,
+#login,
+#register {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#login,
+#register {
+    margin-top: 20px;
+}
+
+.message {
+    background-color: #DCF8C6;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    align-self: flex-end;
+}
+
+.message strong {
+    color: #4CAF50;
+}
+
+.received-message {
+    background-color: #E1E1E1;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    align-self: flex-start;
+}
+
+.received-message strong {
+    color: #333;
+}
+
+/* el otro login */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8fd5d5;
+}
+
+.login-container {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+}
+
+.login-container form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.login-container h2 {
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+.login-container form input {
+    font-weight: lighter;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.login-container form .username {
+    margin-bottom: .7rem;
+}
+
+.login-container form i {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.login-container form input {
+    font-size: 1rem;
+}
+
+.userArea {
+    margin-bottom: .7rem;
+}
+
+.container form .forgotPassword {
+    position: absolute;
+    right: 0rem;
+    cursor: pointer;
+    bottom: 17rem;
+    color: rgb(113, 119, 124);
+    font-size: .8rem;
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: .8rem;
+}
+
+.formBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formBottom ul {
+    margin-bottom: 3rem;
+}
+
+.formBottom p {
+    margin-bottom: .5rem;
+    font-size: .8rem;
+}
+
+.flexUl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexUl a {
+    text-decoration: none;
+}
+
+.flexUl li {
+    list-style: none;
+}
+
+.flexUl li i {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-brands {
+    margin-top: 1rem;
+    cursor: pointer;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.fa-google {
+    background-color: orangered;
+}
+
+.fa-twitter {
+    background-color: rgb(43, 71, 228);
+}
+
+.fa-facebook-f {
+    background-color: darkblue;
+}
+
+
+/* Utility Classes */
+.t-center {
+    text-align: center;
+}
+
+.btn {
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    padding: 0.7rem 0.8rem;
+    background: linear-gradient(to right, #8d68c5, #e34494);
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+#signUp {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#signUp:hover {
+    color: #8d68c5;
+}

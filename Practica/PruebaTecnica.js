@@ -97,37 +97,37 @@ imprime "FizzBuzz".
 // FizzBuzz();
 
 
-const FizzBuzz = () =>{
-    for (let i = 1; i <= 10; i++){
-        if(i %3  === 0 && i % 2  === 0){
-            console.log('FizzBuzz', i)
-        }else if(i % 3 === 0){
-            console.log('Fizz', i)
-        }else if (i % 2 === 0){
-            console.log('Buzz', i)
-        }else{
-            console.log(i)
-        }
-    }
-}
+// const FizzBuzz = () =>{
+//     for (let i = 1; i <= 10; i++){
+//         if(i %3  === 0 && i % 2  === 0){
+//             console.log('FizzBuzz', i)
+//         }else if(i % 3 === 0){
+//             console.log('Fizz', i)
+//         }else if (i % 2 === 0){
+//             console.log('Buzz', i)
+//         }else{
+//             console.log(i)
+//         }
+//     }
+// }
 
-FizzBuzz();
+// FizzBuzz();
 
-const numObj = (s) => {
-    const resultArray = [];
-    for(let i = 0; i < s.length; i++){
-        const charCode = String.fromCharCode(s[i]);
-        const obj = {
-            [String(s[i])] : charCode
-        };
-        resultArray.push(obj);
-    }
-    return resultArray;
-}
+// const numObj = (s) => {
+//     const resultArray = [];
+//     for(let i = 0; i < s.length; i++){
+//         const charCode = String.fromCharCode(s[i]);
+//         const obj = {
+//             [String(s[i])] : charCode
+//         };
+//         resultArray.push(obj);
+//     }
+//     return resultArray;
+// }
 
-const numbersArray = [97,98,99,100,101];
-const result = numObj(numbersArray)
-console.log(result);
+// const numbersArray = [97,98,99,100,101];
+// const result = numObj(numbersArray)
+// console.log(result);
 
 // como saber si una palabra es un palidromo o no
 // const palidromo = (palabra) => {
@@ -143,12 +143,33 @@ console.log(result);
 Escribe una función en JavaScript que tome un array de números como entrada y
  devuelva un nuevo array que contenga solo los números pares del array original. */
 
- const filterAnArray = (array) => {
-    const numberOdd = array.filter(number => number % 2 === 0);
-    return numberOdd;
- }
+//  const filterAnArray = (array) => {
+//     const numberOdd = array.filter(number => number % 2 === 0);
+//     return numberOdd;
+//  }
 
- const originalArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,23, 22, 24,25, 26]
- const numberOdd = filterAnArray(originalArray);
+//  const originalArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,23, 22, 24,25, 26]
+//  const numberOdd = filterAnArray(originalArray);
 
- console.log(numberOdd)
+//  console.log(numberOdd)
+
+/*
+Given an array of integers, return a new array with each value doubled.
+
+For example:
+
+[1, 2, 3] --> [2, 4, 6] 
+*/
+
+function maps(x){
+    const resultArray =[];
+    for (let i = 0; i < x.length; i++){
+        resultArray.push(x[i] * 2);
+    }
+    return resultArray;
+}
+
+    
+    const inputArray = [2,3,4]
+    const resultArray = maps(inputArray)
+    console.log(resultArray)
