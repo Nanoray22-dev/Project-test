@@ -6,6 +6,16 @@ const tasks = [
 
 const taskList = document.getElementById("task-list");
 
+// let task = loadTasks() || [];
+// function savesTask() {
+//   localStorage.setItem("tasks", JSON.stringify(tasks));
+// }
+
+// function loadTasks() {
+//   const storedTasks = localStorage.getItem("tasks");
+//   return storedTasks ? JSON.parse(storedTasks) : [];
+// }
+
 function addTask(title) {
   const newTask = {
     id: tasks.length + 1,
@@ -13,6 +23,7 @@ function addTask(title) {
     completed: false,
   };
   tasks.push(newTask);
+  savesTask()
 }
 
 function renderTasks(filter) {
@@ -75,6 +86,7 @@ function toggleTaskStatus(taskId) {
   const task = tasks.find((task) => task.id === taskId);
   if (task) {
     task.completed = !task.completed;
+    // savesTask()
     renderTasks(getCurrentFilter());
   }
 }
@@ -83,6 +95,7 @@ function deleteTask(taskId) {
   const taskIndex = tasks.findIndex((task) => task.id === taskId);
   if (taskIndex !== -1) {
     tasks.splice(taskIndex, 1);
+    savesTask()
     renderTasks(getCurrentFilter());
   }
 }
@@ -139,3 +152,5 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   renderTasks("all");
 });
+
+
